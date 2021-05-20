@@ -1,17 +1,36 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Slider
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-slides>
+    <ion-slide [attr.aria-label]="'First slide'">
+      <ion-grid>
+        <ion-row>
+          <ion-col>1</ion-col>
+          <ion-col>2</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>3</ion-col>
+          <ion-col>4</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide [attr.aria-label]="'Second slide'">
+      <ion-grid>
+        <ion-row>
+          <ion-col>5</ion-col>
+          <ion-col>6</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>7</ion-col>
+          <ion-col>8</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
